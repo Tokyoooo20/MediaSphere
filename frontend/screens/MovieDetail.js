@@ -14,7 +14,7 @@ import {
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import axios from 'axios';
-import { TMDB_API_KEY } from '@env';
+import { REACT_APP_TMDB_API_KEY } from '@env';
 import YoutubePlayer from 'react-native-youtube-iframe';
 
 const { width, height } = Dimensions.get('window');
@@ -26,7 +26,7 @@ const TMDB_API_URL = 'https://api.themoviedb.org/3';
 const tmdbAxios = axios.create({
   baseURL: TMDB_API_URL,
   params: {
-    api_key: TMDB_API_KEY,
+    api_key: REACT_APP_TMDB_API_KEY,
     language: 'en-US'
   }
 });

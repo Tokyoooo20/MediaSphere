@@ -13,7 +13,6 @@ import {
 import { Ionicons } from '@expo/vector-icons';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { REACT_APP_TMDB_API_KEY } from '@env';
 
 const { width } = Dimensions.get('window');
 const ITEM_WIDTH = (width - 48) / 2;
@@ -25,7 +24,7 @@ const TMDB_API_URL = 'https://api.themoviedb.org/3';
 const tmdbAxios = axios.create({
   baseURL: TMDB_API_URL,
   params: {
-    api_key: REACT_APP_TMDB_API_KEY,
+    api_key: '1da08f1c929c2585d3287d42e130b354',
     language: 'en-US'
   }
 });
